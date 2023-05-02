@@ -1,0 +1,75 @@
+#datos_tabla{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(203, 149, 253);
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.campos, .campos_bd{
+    display: flex;
+}
+
+.campos p, .campos_bd p, .campos_bd a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid blueviolet;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 5px;
+    padding: 5px;
+}
+
+.campos_bd p,.campos_bd a{
+    background-color: aliceblue;
+}
+
+#busqueda_conteiner{
+    padding: 5px;
+}
+
+#busqueda{
+    padding: 2px;
+    font-size: 0.9rem;
+}
+
+#busqueda_btn{
+    padding: 2px;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+
+
+
+
+@media (max-width: 1050px){
+    .campos p, .campos_bd p,.campos_bd a{
+        width: 100%;
+        font-size: 0.8rem;
+        margin: 2px;
+        padding: 3px;
+    }
+}
+
+
+@media (max-width:800px){
+
+    #datos_tabla{
+        margin-top: 100px;
+        padding: 10px;
+        overflow-y: auto;
+    }
+
+    .campos p, .campos_bd p,.campos_bd a{
+        min-width: 70px;
+        font-size: 0.8rem;
+        margin: 1px;
+        padding: 3px;
+    }
+}
